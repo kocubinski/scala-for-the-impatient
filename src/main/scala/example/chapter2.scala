@@ -39,10 +39,10 @@ object functions {
   }
 
   def stringFold(s: String) = {
-    s.foldLeft(1)(_ * _.toInt)
+    s.foldLeft(1L)(_ * _.toInt)
   }
 
   def stringFold2(s: String) = {
-    s.foldLeft(1)(op: (B, Char) => B)
+    s.foldLeft(1L)((p, c) => p * c.toInt)
   }
 }
