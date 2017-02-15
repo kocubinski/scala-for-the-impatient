@@ -38,6 +38,11 @@ object functions {
     res
   }
 
+  def stringProductRecur(s : String, p : Long = 1) : Long = {
+    if (s.isEmpty()) p
+    else stringProductRecur(s.substring(1), p * s(0).toInt)
+  }
+
   def stringFold(s: String) = {
     s.foldLeft(1L)(_ * _.toInt)
   }
