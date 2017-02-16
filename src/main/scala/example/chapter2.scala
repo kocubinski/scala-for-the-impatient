@@ -2,7 +2,7 @@ package example
 
 import java.time.LocalDate
 
-object functions {
+object chapter2 {
   def sum(args: Int*): Int = {
     var result: Int = 0
     for (arg <- args) result += arg
@@ -67,5 +67,4 @@ object functions {
       LocalDate.of(dateParts(0), dateParts(1), dateParts(2))
     }
   }
-
 }
