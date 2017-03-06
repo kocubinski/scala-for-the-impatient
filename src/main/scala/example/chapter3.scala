@@ -52,9 +52,11 @@ object chapter3 {
     a
   }
 
-  def butFirstNeagative2(a: ArrayBuffer[Int]): ArrayBuffer[Int] = {
+  def butFirstNegative2(a: ArrayBuffer[Int]): ArrayBuffer[Int] = {
     val ns = for (i <- 0 until a.length if a(i) < 0) yield i
     val ps = for (i <- 0 until a.length if a(i) >= 0) yield i
-
+    println(s"negatives: $ns.tail")
+    println(s"positives: $ps")
+    a
   }
 }
